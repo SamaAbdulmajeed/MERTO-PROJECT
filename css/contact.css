@@ -91,7 +91,8 @@ body {
   background-color: #f0f2f5;
   border-radius: 8px;
   padding: 5px;
-  width: 50%;
+  width: 100%;
+  max-width: 600px;
   max-width: 600px;
   font-family: sans-serif;
 }
@@ -493,7 +494,6 @@ body {
   51% {
     transform: scaleX(0);
     transform-origin: bottom left;
-    /* يقلب مكانه وهو مختفي */
   }
 
   100% {
@@ -547,7 +547,8 @@ svg {
 }
 
 .contact-form {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   margin: 50px auto;
 }
 
