@@ -1,942 +1,867 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
-    --bg-color: #f0f3f5;
-    --text-color: #8a8f94;
+  --bg-color: #f0f3f5;
+  --text-color: #8a8f94;
 }
 
 body {
-    font-family: 'Jost', sans-serif;
-    padding-top: 80px;
+  font-family: "Jost", sans-serif;
+  padding-top: 80px;
 }
 
 /* nav-bar*/
 .main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
 
+  padding: 0 30px;
 }
 
 .nav-logo {
-    color: #000000;
-    font-weight: bold;
-    position: relative;
-    font-family: sans-serif;
-    font-size: 40px;
-    white-space: nowrap;
+  color: #000000;
+  font-weight: bold;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 40px;
+  white-space: nowrap;
 }
 
 .e-red {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .e-red::before {
-    content: "";
-    position: absolute;
-    top: 9px;
-    left: 0;
-    width: 75%;
-    height: 4px;
-    background: red;
-    margin-left: 3px;
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 75%;
+  height: 4px;
+  background: red;
+  margin-left: 3px;
 }
 
 .nav-contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .contact-text {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  white-space: nowrap;
 }
 
 .contact-text p {
-    margin: 0;
+  margin: 0;
 }
 
-
 .nav-contact-item svg {
-    width: 35px;
-    height: 35px;
-    margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
 }
 
 .nav-contact-item:hover span,
 .nav-contact-item:hover p,
 .nav-contact-item:hover svg {
-    color: red;
+  color: red;
 }
-
 
 .search {
-    display: flex;
-    align-items: center;
-    background-color: #f0f2f5;
-    /* لون الخلفية الرمادي */
-    border-radius: 8px;
-    padding: 5px;
-    width: 50%;
-    max-width: 600px;
-    font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  padding: 5px;
+  width: 50%;
+  max-width: 600px;
+  font-family: sans-serif;
 }
 
-/* تنسيق زرار الدروب داون */
 .drop-btn {
-    background: none;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
 
-/* سهم الدروب داون الصغير */
 .arrow {
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    margin-left: 10px;
-    transform: rotate(45deg);
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 10px;
+  transform: rotate(45deg);
 }
 
-/* الخط الفاصل */
 .divider {
-    width: 1px;
-    height: 25px;
-    background-color: #ccc;
-    margin: 0 10px;
+  width: 1px;
+  height: 25px;
+  background-color: #ccc;
+  margin: 0 10px;
 }
 
-/* منطقة الإدخال */
 .search-input {
-    display: flex;
-    flex-grow: 1;
-    /* عشان تاخد باقي المساحة */
-    align-items: center;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
 }
 
 .search-input input {
-    border: none;
-    background: none;
-    padding: 10px;
-    width: 100%;
-    outline: none;
-    /* عشان ميعملش برواز أسود لما تضغطي عليه */
-    font-size: 16px;
+  border: none;
+  background: none;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
 }
 
-/* زرار البحث الأسود */
-.search-btn {
-    background-color: black;
-    border: none;
-    border-radius: 8px;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.nav-search-btn {
+  background-color: black;
+  border: none;
+  border-radius: 8px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-/* إخفاء القائمة في البداية */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    border-radius: 4px;
-    margin-top: 5px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 4px;
+  margin-top: 5px;
 }
-
-
 
 .dropdown-content a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
 }
 
-/* الحاوية الأساسية */
 .nav-settings {
-    display: flex;
-    gap: 20px;
-    /* مسافة بين اللغة والعملة */
-    align-items: center;
-    font-family: sans-serif;
-    font-size: 14px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 
-/* كل عنصر (لغة أو عملة) */
 .setting-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    /* مسافة بين العلم والكلام والسهم */
-    cursor: pointer;
-    position: relative;
-    padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
 }
 
-/* تنسيق صورة العلم */
 .flag-icon {
-    width: 20px;
-    height: auto;
-    border-radius: 2px;
+  width: 20px;
+  height: auto;
+  border-radius: 2px;
 }
 
-/* تنسيق السهم الصغير */
 .arrow-icon {
-    font-size: 10px;
-    /* خليه أصغر من الكلام */
-    color: #333;
+  font-size: 10px;
+  color: #333;
 }
 
-/* القائمة المخفية */
 .dropdown-list {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    padding: 5px 0;
-    min-width: 80px;
-    z-index: 10;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 5px 0;
+  min-width: 80px;
+  z-index: 10;
 }
 
 .dropdown-list li {
-    padding: 5px 15px;
+  padding: 5px 15px;
 }
 
 .dropdown-list li:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
-/* إظهار القائمة (ممكن تستخدمي الـ JS اللي عملناه قبل كده أو Hover) */
 .setting-item:hover .dropdown-list {
-    display: block;
+  display: block;
 }
 
-/* الحاوية الكبيرة */
 .user-actions-container {
-    display: flex;
-    align-items: center;
-    /* لتوسيط العناصر رأسياً */
-    gap: 30px;
-    /* مسافة بين المجموعات التلاتة */
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-family: sans-serif;
 }
 
-/* تنسيق المجموعة الواحدة */
 .action-item {
-    display: flex;
-    align-items: center;
-    position: relative;
-    /* مهم جداً عشان الـ badge يتقاس عليه */
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
 }
 
-/* تنسيق النص (Account) */
 .action-item .label {
-    font-weight: bold;
-    font-size: 16px;
-    margin-left: 10px;
-    /* مسافة بين الأيقونة والنص */
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 10px;
 }
 
-/* تنسيق رقم الإشعارات الأحمر (الـ Badge) */
 .action-item .badge {
-    position: absolute;
-    /* لإخراج العنصر من الترتيب الطبيعي */
-    top: -8px;
-    /* لتحريكه للأعلى خارج الأيقونة */
-    right: -8px;
-    /* لتحريكه لليمين خارج الأيقونة */
-    background-color: red;
-    /* لون الخلفية الأحمر */
-    color: white;
-    /* لون الرقم أبيض */
-    border-radius: 50%;
-    /* لجعله دائرياً */
-    width: 18px;
-    /* عرض ثابت */
-    height: 18px;
-    /* طول ثابت مساوي للعرض */
-    display: flex;
-    /* لتوسيط الرقم جواه */
-    justify-content: center;
-    /* لتوسيط الرقم أفقياً جواه */
-    align-items: center;
-    /* لتوسيط الرقم رأسياً جواه */
-    font-size: 11px;
-    /* حجم الرقم */
-    font-weight: bold;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: bold;
 }
 
-/* (مبدئياً) تنسيق الأيقونات بس عشان تبان */
 .user-icon,
 .heart-icon,
 .cart-icon {
-    width: 24px;
-    height: 24px;
-    border: 2px solid black;
-    border-radius: 5px;
-    display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: block;
 }
 
-/* تعديل للأيقونة الحساب عشان النص يقعد جنبها مش تحتها */
 .action-item.account {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-/* تنسيق أي أيقونة (fa-) جوه أي عنصر (action-item) */
 .action-item i {
-    font-size: 24px;
-    /* حجم الأيقونة */
-    color: #000;
-    /* لون الأيقونة أسود */
+  font-size: 24px;
+  color: #000;
 }
 
-/* ممكن تدي أيقونة الحساب لون خاص لو حبيتي */
 .user-icon-main {
-    color: #333;
-    /* لون أغمق قليلاً للمستخدم */
+  color: #333;
 }
 
-/* تنسيق ال  badge (زي ما هو ما غيرناهوش) */
 .action-item .badge {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 11px;
-    font-weight: bold;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: bold;
 }
 
 .action-item:hover i,
 .action-item:hover .label,
 .action-item:hover .badge {
-    color: red;
+  color: red;
 }
 
 .bottom-nav {
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    padding: 10px 0;
-    font-family: sans-serif;
-    position: relative;
-    /* مهم */
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  font-family: sans-serif;
+  position: relative;
 }
 
 .bottom-nav .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* يوزع العناصر على الأطراف */
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .all-categories {
-    padding-right: 20px;
-    margin-right: 20px;
-    position: relative;
+  padding-right: 20px;
+  margin-right: 20px;
+  position: relative;
 }
 
 .all-categories::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: -10px;
-    /* يطلع لحد border-top */
-    bottom: -10px;
-    /* ينزل لحد border-bottom */
-    width: 1px;
-    background-color: #ddd;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+  width: 1px;
+  background-color: #ddd;
 }
 
-/* زر التصنيفات */
 .categories-btn {
-    background: none;
-    border: none;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-
-/* قائمة الروابط */
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    /* المسافة بين الروابط */
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-    font-weight: 500;
-    transition: 0.3s;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 .nav-links li a:hover {
-    color: #ff4d4d;
-    /* لون عند التمرير */
+  color: #ff4d4d;
 }
 
-/* أيقونات السهم الصغير */
 .nav-links i {
-    font-size: 10px;
-    margin-left: 3px;
+  font-size: 10px;
+  margin-left: 3px;
 }
 
-/* تمييز رابط الخصومات */
 .discount-link {
-    color: #333;
+  color: #333;
 }
 
+.recently-viewed {
+  position: relative;
+}
 
+.recently-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.recently-link i {
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.recently-link:hover {
+  color: #ff4d4d;
+}
 
 .main-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-header {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .section-header h1 {
-    font-size: 55px;
-    font-weight: bold;
-    margin-bottom: 8px;
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .section-header p {
-    font-size: 12px;
-    color: rgb(91, 91, 91);
-    text-align: center;
+  font-size: 12px;
+  color: rgb(91, 91, 91);
+  text-align: center;
 }
 
 .contact-ways {
-    display: flex;
-    justify-content: space-around;
-    gap: 40px;
-    margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  margin-top: 25px;
 }
 
 .contact-item {
-    display: flex;
-    flex-direction: column;
-    /* يخليهم فوق بعض */
-    align-items: flex-start;
-    /* يخليهم يبدأوا من الشمال */
-    text-align: left;
-    /* النص يبقى شمال */
-    gap: 8px;
-    /* مسافات بينهم */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 8px;
 }
 
-
 .contact-item h3 {
-    margin: 10px 0;
-    font-size: 15px;
+  margin: 10px 0;
+  font-size: 15px;
 }
 
 .contact-item p {
-    color: #888;
-    font-size: 14px;
+  color: #888;
+  font-size: 14px;
 }
 
 .animated-link {
-    text-decoration: none;
-    color: #000;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 2px;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2px;
+  transition: color 0.3s;
 }
 
-
 .animated-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: currentColor;
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .animated-link:hover {
-    color: #ff0000;
+  color: #ff0000;
 }
 
 .animated-link:hover::after {
-    background-color: #ff0000;
-    animation: sweep 0.6s forwards;
+  background-color: #ff0000;
+  animation: sweep 0.6s forwards;
 }
 
 @keyframes sweep {
-    0% {
-        transform: scaleX(1);
-        transform-origin: bottom right;
-    }
+  0% {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+  }
 
-    50% {
-        transform: scaleX(0);
-        transform-origin: bottom right;
-    }
+  50% {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
 
-    51% {
-        transform: scaleX(0);
-        transform-origin: bottom left;
-        /* يقلب مكانه وهو مختفي */
-    }
+  51% {
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    /* يقلب مكانه وهو مختفي */
+  }
 
-    100% {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
+  100% {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
-    background-color: #14e745;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: #14e745;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
 }
 
 .contact-item a:hover {
-    color: rgb(225, 63, 63);
+  color: rgb(225, 63, 63);
 }
 
 .no-hover .animated-link:hover {
-    color: #000;
-    /* يفضل أسود */
+  color: #000;
 }
 
 svg {
-    stroke-width: 1.5px;
-    width: 24px;
-    height: 24px;
+  stroke-width: 1.5px;
+  width: 24px;
+  height: 24px;
 }
 
 .no-hover :hover::after {
-    background-color: #000000;
+  background-color: #000000;
 }
 
-
 .social-icons {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .social-icons svg {
-    width: 24px;
-    height: 24px;
-    color: #000;
-    stroke-width: 1.5px;
-    cursor: pointer;
+  width: 24px;
+  height: 24px;
+  color: #000;
+  stroke-width: 1.5px;
+  cursor: pointer;
 }
 
 .social-icons svg:hover {
-    color: rgb(225, 63, 63);
+  color: rgb(225, 63, 63);
 }
 
 .contact-form {
-    width: 800px;
-    margin: 50px auto;
+  width: 800px;
+  margin: 50px auto;
 }
 
 .contact-form h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 
 .contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* المسافة بين الصفوف */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contact-form .flex {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
-/* تنسيق جميع المدخلات */
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    background-color: var(--bg-color);
-    /* لون الخلفية الرمادي الفاتح */
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-    box-sizing: border-box;
-    /* لضمان عدم خروج الحواف عن الحاوية */
+  width: 100%;
+  padding: 15px;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
 }
 
-/* تخصيص مساحة الرسالة */
 .contact-form textarea {
-    height: 150px;
-    resize: vertical;
-    /* السماح للمستخدم بتكبيرها طولياً فقط */
+  height: 150px;
+  resize: vertical;
 }
 
-/* تنسيق الزر */
 .contact-form button {
-    background-color: #000;
-    color: #fff;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s ease;
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: rgb(227, 42, 42);
+  background-color: rgb(227, 42, 42);
 }
 
-
 .stores-container {
-    display: flex;
-    gap: 20px;
-    /* 👈 مسافة بين الصور */
-    padding: 0 40px;
-    /* 👈 مسافة من الجنبين */
-    box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
 .stores-title {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    margin: 40px 0 30px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 40px 0 30px;
 }
 
 .store {
-    flex: 1;
-    /* 👈 يخليهم 3 جنب بعض بمسافات مظبوطة */
-    text-align: center;
-    position: relative;
+  flex: 1;
+  text-align: center;
+  position: relative;
 }
 
 .store img {
-    width: 100%;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .store:hover img {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .store-text {
-    text-align: left;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  text-align: left;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .store-text h4 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .store-text p {
-    color: var(--text-color);
+  color: var(--text-color);
 }
-
-
-
 
 /* footer*/
 footer {
-    background-color: #1B1F22;
-    color: #ffffff;
-    padding: 40px 0 15px 0;
-    font-family: sans-serif;
-    margin-top: 50px;
+  background-color: #1b1f22;
+  color: #ffffff;
+  padding: 40px 0 15px 0;
+  font-family: sans-serif;
+  margin-top: 50px;
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .logo {
-    color: #fff;
-    font-weight: bold;
-    position: relative;
-    font-family: sans-serif;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  font-family: sans-serif;
 }
 
 .footer-col h1.logo {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .footer-contact {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin: 0;
-    /* مهم نشيل أي تعارض */
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0;
 }
 
 .footer-contact i {
-    color: #949494;
-    margin-top: 3px;
+  color: #949494;
+  margin-top: 3px;
 }
 
 .footer-contact p {
-    color: #949494;
+  color: #949494;
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
-    /* المسافة بين اللوجو وباقي العناصر */
-    padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  padding-right: 15px;
 }
 
 .contact-details {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    /* مسافات متساوية بين العنوان والإيميل والرقم */
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-/* تنسيق الأعمدة */
 .footer-col {
-    flex: 1;
-    min-width: 200px;
-    margin-bottom: 20px;
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
 }
 
 .footer-col h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .footer-col h4 {
-    font-size: 16px;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .footer-col ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-col ul li {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .footer-col ul li a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .footer-col ul li a:hover {
-    color: rgba(222, 16, 16, 1);
+  color: rgba(222, 16, 16, 1);
 }
 
-/* خانة الإيميل (Newsletter) */
 .input-group {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .input-group input {
-    width: 100%;
-    padding: 12px 15px;
-    background: #1B1F22;
-    border: 1px solid #3a3c3e;
-    color: #fff;
-    border-radius: 5px;
-    outline: none;
+  width: 100%;
+  padding: 12px 15px;
+  background: #1b1f22;
+  border: 1px solid #3a3c3e;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
 }
 
 .input-group button {
-    position: absolute;
-    right: 10px;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 footer .social-icons svg {
-    width: 20px;
-    height: 20px;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/* شريط المساعدة (Help Section) */
 .help-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid #333;
-    border-radius: 5px;
-    margin: 20px 55px;
-    padding: 35px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 20px 55px;
+  padding: 35px 20px;
 
-    background-color: #1B1F22;
-
+  background-color: #1b1f22;
 }
 
 .help-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .help-text span {
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .help-text a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .help-item svg,
 .help-item i {
-    width: 32px;
-    height: 32px;
-    font-size: 32px;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
 }
 
-/* الجزء السفلي (Bottom Bar) */
 .footer-bottom {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    color: #777;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #777;
 }
 
-/* صور وسائل الدفع */
 .payment-methods {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 .payment-methods img {
-    height: 25px;
-    background: #fff;
-    padding: 4px;
-    border-radius: 3px;
+  height: 25px;
+  background: #fff;
+  padding: 4px;
+  border-radius: 3px;
 }
 
 footer .animated-link {
-    color: #fff;
+  color: #fff;
 }
 
 footer .animated-link:hover {
-    color: #fff;
-    /* النص مايتغيرش */
+  color: #fff;
 }
 
 footer .animated-link::after {
-    background-color: #fff;
-    /* الخط أبيض */
+  background-color: #fff;
 }
 
 footer .animated-link:hover::after {
-    background-color: white;
-    /* الخط بس يبقى أحمر */
+  background-color: white;
 }
 
 .payment-methods {
-    display: flex;
-    gap: 12px;
-    align-items: center;
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
 .payment-methods i {
-    font-size: 34px;
-    color: #ffffff;
-
+  font-size: 34px;
+  color: #ffffff;
 }

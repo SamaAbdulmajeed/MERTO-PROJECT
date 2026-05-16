@@ -1,4 +1,3 @@
-// وقت النهاية بعد 5 أيام
 let targetDate = new Date();
 
 targetDate.setDate(targetDate.getDate() + 5);
@@ -8,7 +7,6 @@ function updateTimer() {
 
   let diff = targetDate - now;
 
-  // لو الوقت انتهى
   if (diff <= 0) {
     document.getElementById("days").innerHTML = "00";
     document.getElementById("hours").innerHTML = "00";
@@ -17,8 +15,6 @@ function updateTimer() {
 
     return;
   }
-
-  // الحسابات
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -27,7 +23,6 @@ function updateTimer() {
 
   let seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-  // عرض القيم
   document.getElementById("days").innerHTML = days;
 
   document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
@@ -42,14 +37,9 @@ function updateTimer() {
     "0",
   );
 }
-
-// تشغيل أول مرة
 updateTimer();
-
-// تحديث كل ثانية
 setInterval(updateTimer, 1000);
 
-// وظيفة التبديل بين التبويبات
 function openTab(event, tabName) {
   document.querySelectorAll(".tab-content").forEach((el) => {
     el.classList.remove("active");

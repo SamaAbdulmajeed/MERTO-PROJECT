@@ -1,398 +1,523 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../css/contact.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Navbar-->
     <div class="nav-bar">
-        <nav class="main-nav">
-            <h1 class="nav-logo">
-                M<span class="e-red">e</span>rto
-            </h1>
-            <div class="nav-contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="contact-icon">
-                    <path
-                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.28-2.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                    </path>
-                </svg>
-                <div class="contact-text">
-                    <span>Contact us 24/7</span>
-                    <p>(+92) 3942 7879</p>
-                </div>
+      <nav class="main-nav">
+        <h1 class="nav-logo">M<span class="e-red">e</span>rto</h1>
+        <div class="nav-contact-item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="contact-icon"
+          >
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.28-2.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+            ></path>
+          </svg>
+          <div class="contact-text">
+            <span>Contact us 24/7</span>
+            <p>(+92) 3942 7879</p>
+          </div>
+        </div>
+
+        <div class="search">
+          <div class="dropdown">
+            <button class="drop-btn">
+              All Categories <span><i class="arrow"></i></span>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Electronics</a>
+              <a href="#">Fashion</a>
+              <a href="#">Home</a>
             </div>
+          </div>
 
-            <div class="search">
-                <div class="dropdown">
-                    <button class="drop-btn">
-                        All Categories <span><i class="arrow"></i></span>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Electronics</a>
-                        <a href="#">Fashion</a>
-                        <a href="#">Home</a>
-                    </div>
-                </div>
+          <div class="divider"></div>
 
-                <div class="divider"></div>
+          <div class="search-input">
+            <input type="text" placeholder="Search for products..." />
+            <button class="nav-search-btn">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
 
-                <div class="search-input">
-                    <input type="text" placeholder="Search for products...">
-                    <button class="search-btn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+        <div class="nav-settings">
+          <div class="setting-item">
+            <img
+              src="https://flagcdn.com/w20/us.png"
+              alt="English"
+              class="flag-icon"
+            />
+            <span>English</span>
+            <i class="fas fa-chevron-down arrow-icon"></i>
+            <ul class="dropdown-list">
+              <li>Arabic</li>
+              <li>French</li>
+            </ul>
+          </div>
 
-            <div class="nav-settings">
+          <div class="setting-item">
+            <span>USD</span>
+            <i class="fas fa-chevron-down arrow-icon"></i>
+            <ul class="dropdown-list">
+              <li>EUR</li>
+              <li>EGP</li>
+            </ul>
+          </div>
+        </div>
 
-                <div class="setting-item">
-                    <img src="https://flagcdn.com/w20/us.png" alt="English" class="flag-icon">
-                    <span>English</span>
-                    <i class="fas fa-chevron-down arrow-icon"></i>
-                    <ul class="dropdown-list">
-                        <li>Arabic</li>
-                        <li>French</li>
-                    </ul>
-                </div>
+        <div class="user-actions-container">
+          <div class="action-item account">
+            <i class="fa-regular fa-user user-icon-main"></i>
+            <span class="label">Account</span>
+          </div>
 
-                <div class="setting-item">
-                    <span>USD</span>
-                    <i class="fas fa-chevron-down arrow-icon"></i>
-                    <ul class="dropdown-list">
-                        <li>EUR</li>
-                        <li>EGP</li>
-                    </ul>
-                </div>
+          <div class="action-item wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <span class="badge">0</span>
+          </div>
 
-            </div>
+          <div class="action-item cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="badge">0</span>
+          </div>
+        </div>
+      </nav>
 
-            <div class="user-actions-container">
-                <div class="action-item account">
-                    <i class="fa-regular fa-user user-icon-main"></i>
-                    <span class="label">Account</span>
-                </div>
+      <nav class="bottom-nav">
+        <div class="container">
+          <div class="all-categories">
+            <button class="categories-btn">
+              <i class="fa-solid fa-bars"></i>
+              SHOP BY CATEGORIES
+            </button>
+          </div>
 
-                <div class="action-item wishlist">
-                    <i class="fa-regular fa-heart"></i>
-                    <span class="badge">0</span>
-                </div>
+          <ul class="nav-links">
+            <li>
+              <a href="#">Homepages <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                >Categories <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li>
+              <a href="#" class="discount-link"
+                ><i class="fa-solid fa-percent"></i> Best Discount</a
+              >
+            </li>
+          </ul>
 
-                <div class="action-item cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="badge">0</span>
-                </div>
-            </div>
-        </nav>
-
-        <nav class="bottom-nav">
-            <div class="container">
-                <div class="all-categories">
-                    <button class="categories-btn">
-                        <i class="fa-solid fa-bars"></i>
-                        SHOP BY CATEGORIES
-                    </button>
-
-                </div>
-
-                <ul class="nav-links">
-                    <li><a href="#">Homepages <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="#">Categories <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="#">Products <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#" class="discount-link"><i class="fa-solid fa-percent"></i> Best Discount</a></li>
-                </ul>
-
-                <div class="recently-viewed">
-                    <a href="#">Recently viewed <i class="fa-solid fa-chevron-down"></i></a>
-                </div>
-            </div>
-        </nav>
-
-
+          <div class="recently-viewed">
+            <a href="#" class="recently-link">
+              Recently viewed
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
-
     <!-- contact us section-->
     <section class="main-section">
-        <div class="section-header">
-            <h1>Contact us</h1>
-            <p>34 Main Street, Los Angeles 9021 <br>
-                United States</p>
+      <div class="section-header">
+        <h1>Contact us</h1>
+        <p>
+          34 Main Street, Los Angeles 9021 <br />
+          United States
+        </p>
+      </div>
+
+      <div class="contact-ways">
+        <div class="contact-item">
+          <div class="icon"><i data-lucide="phone-call"></i></div>
+          <h3>Customer service</h3>
+          <a href="#" class="animated-link">+92 3942 7879</a>
+          <p>Call us from 8am to 8pm</p>
         </div>
 
-        <div class="contact-ways">
-            <div class="contact-item">
-                <div class="icon"> <i data-lucide="phone-call"></i> </div>
-                <h3>Customer service</h3>
-                <a href="#" class="animated-link">+92 3942 7879</a>
-                <p>Call us from 8am to 8pm</p>
-            </div>
-
-            <div class="contact-item no-hover">
-                <div class="icon"> <i data-lucide="message-square"></i> </div>
-                <h3>Chat with us</h3>
-                <a href="#" class="animated-link">
-                    <span class="dot"></span>
-                    Live Chat</a>
-                <P>Daily: 8 am to 11 pm</P>
-            </div>
-
-            <div class="contact-item">
-                <div class="icon"> <i data-lucide="mail"></i> </div>
-                <h3>Write to us</h3>
-                <a href="#" class="animated-link">contact@example.com</a>
-            </div>
-
-            <div class="contact-item">
-                <div class="icon"> <i data-lucide="user-plus"></i> </div>
-                <h3>Follow us</h3>
-                <div class="social-icons">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                    </svg>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
-                    </svg>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="2" y="3" width="20" height="14" rx="2.13" ry="2.13"></rect>
-                        <path d="m9 7 8 4-8 4V7Z"></path>
-                    </svg>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
-                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
-                    </svg>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                    </svg>
-                </div>
-            </div>
+        <div class="contact-item no-hover">
+          <div class="icon"><i data-lucide="message-square"></i></div>
+          <h3>Chat with us</h3>
+          <a href="#" class="animated-link">
+            <span class="dot"></span>
+            Live Chat</a
+          >
+          <p>Daily: 8 am to 11 pm</p>
         </div>
 
-        <div class="contact-form">
-            <h2>Do you have some questions?</h2>
-            <form>
-                <div class="flex">
-                    <input type="text" placeholder="Name and Surname *">
-                    <input type="email" placeholder="Email *">
-                </div>
-                <input type="text" placeholder="Subject*">
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">GET IN TOUCH</button>
-            </form>
+        <div class="contact-item">
+          <div class="icon"><i data-lucide="mail"></i></div>
+          <h3>Write to us</h3>
+          <a href="#" class="animated-link">contact@example.com</a>
         </div>
+
+        <div class="contact-item">
+          <div class="icon"><i data-lucide="user-plus"></i></div>
+          <h3>Follow us</h3>
+          <div class="social-icons">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              ></path>
+            </svg>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+            </svg>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect
+                x="2"
+                y="3"
+                width="20"
+                height="14"
+                rx="2.13"
+                ry="2.13"
+              ></rect>
+              <path d="m9 7 8 4-8 4V7Z"></path>
+            </svg>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+            </svg>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Do you have some questions?</h2>
+        <form>
+          <div class="flex">
+            <input type="text" placeholder="Name and Surname *" />
+            <input type="email" placeholder="Email *" />
+          </div>
+          <input type="text" placeholder="Subject*" />
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">GET IN TOUCH</button>
+        </form>
+      </div>
     </section>
-
 
     <!-- google map-->
     <div class="map-wrapper">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27404345275!2d-118.691920473012!3d34.02016130939095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75dd41cf011%3A0x44a2874397f094e5!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2seg!4v1715025000000!5m2!1sen!2seg"
-            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27404345275!2d-118.691920473012!3d34.02016130939095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75dd41cf011%3A0x44a2874397f094e5!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2seg!4v1715025000000!5m2!1sen!2seg"
+        width="100%"
+        height="500"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
     </div>
 
     <!-- Stores-->
 
     <h2 class="stores-title">Stores around the world</h2>
     <section class="stores-container">
-        <div class="store">
-            <img src="../images/store1.jpg">
-            <div class="store-text">
-                <h4>Los Angeles</h4>
-                <P>34 Main Street, Los Angeles 9021<br>United States</P>
-                <span>+02 1234 567 88</span>
-            </div>
+      <div class="store">
+        <img src="../images/store1.jpg" />
+        <div class="store-text">
+          <h4>Los Angeles</h4>
+          <p>34 Main Street, Los Angeles 9021<br />United States</p>
+          <span>+02 1234 567 88</span>
         </div>
+      </div>
 
-        <div class="store">
-            <img src="../images/store2.jpg">
-            <div class="store-text">
-                <h4>New York</h4>
-                <P>515 Broadway 10015 New York <br> United States</P>
-                <span>+49 1234 567 88</span>
-            </div>
+      <div class="store">
+        <img src="../images/store2.jpg" />
+        <div class="store-text">
+          <h4>New York</h4>
+          <p>
+            515 Broadway 10015 New York <br />
+            United States
+          </p>
+          <span>+49 1234 567 88</span>
         </div>
+      </div>
 
-        <div class="store">
-            <img src="../images/store3.jpg">
-            <div class="store-text">
-                <h4>California</h4>
-                <P>1000 California St 68114 Omaha <br> United States</P>
-                <span>+44 1234 567 88</span>
-            </div>
+      <div class="store">
+        <img src="../images/store3.jpg" />
+        <div class="store-text">
+          <h4>California</h4>
+          <p>
+            1000 California St 68114 Omaha <br />
+            United States
+          </p>
+          <span>+44 1234 567 88</span>
         </div>
+      </div>
     </section>
 
     <!-- footer -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-col contact-info">
-                <h1 class="logo">
-                    M<span class="e-red">e</span>rto
-                </h1>
+      <div class="footer-container">
+        <div class="footer-col contact-info">
+          <h1 class="logo">M<span class="e-red">e</span>rto</h1>
 
-                <div class="contact-details">
-                    <div class="footer-contact">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>29 SE 2nd Ave, Miami Florida<br>33131, United States</p>
-                    </div>
-
-                    <div class="footer-contact">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>info@example.com</p>
-                    </div>
-
-                    <h3 class="phone-number">(+92) 3942 7879</h3>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h4>SHOPPING</h4>
-                <ul>
-                    <li><a href="#">Wishlist</a></li>
-                    <li><a href="#">Shop by Brand</a></li>
-                    <li><a href="#">Offers</a></li>
-                    <li><a href="#">Track order </a></li>
-                    <li><a href="#">Size guide</a></li>
-                </ul>
+          <div class="contact-details">
+            <div class="footer-contact">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>29 SE 2nd Ave, Miami Florida<br />33131, United States</p>
             </div>
 
-            <div class="footer-col">
-                <h4>INFOMATION</h4>
-                <ul>
-                    <li><a href="#">Track order</a></li>
-                    <li><a href="#">Shipping & Returns</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Help </a></li>
-                    <li><a href="#">Gift Cards</a></li>
-                </ul>
+            <div class="footer-contact">
+              <i class="fa-solid fa-envelope"></i>
+              <p>info@example.com</p>
             </div>
 
-            <div class="footer-col">
-                <h4>ACCOUNT</h4>
-                <ul>
-                    <li><a href="#">Cart</a></li>
-                    <li><a href="#">My accounts</a></li>
-                    <li><a href="#">My orders</a></li>
-                    <li><a href="#">Wishlist </a></li>
-                    <li><a href="#">Affiliate program</a></li>
-                </ul>
-            </div>
-
-
-            <div class="footer-col newsletter">
-                <h4>Let's keep in touch</h4>
-                <div class="input-group">
-                    <input type="email" placeholder="enter your email address">
-                    <button>→</button>
-                </div>
-                <div class="social-icons">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                    </svg>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
-                    </svg>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="2" y="3" width="20" height="14" rx="2.13" ry="2.13"></rect>
-                        <path d="m9 7 8 4-8 4V7Z"></path>
-                    </svg>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
-                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
-                    </svg>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                    </svg>
-                </div>
-            </div>
+            <h3 class="phone-number">(+92) 3942 7879</h3>
+          </div>
         </div>
-        </div>
+        <div class="footer-col">
+          <h4>SHOPPING</h4>
+          <ul>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Shop by Brand</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Track order </a></li>
+            <li><a href="#">Size guide</a></li>
+          </ul>
         </div>
 
-        <div class="help-section">
-            <div class="help-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="contact-icon">
-                    <path
-                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.28-2.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                    </path>
-                </svg>
-                <div class="help-text">
-                    <span>Didn't find what you were looking for?</span>
-                    <a href="#" class="animated-link">Contact Us</a>
-                </div>
-            </div>
-
-            <div class="help-item">
-                <i class="fa-regular fa-face-smile"></i>
-                <div class="help-text">
-                    <span>How can we help you today?</span>
-                    <a href="#" class="animated-link">Help Center</a>
-                </div>
-            </div>
-
-            <div class="help-item">
-                <i class="fa-regular fa-life-ring"></i>
-                <div class="help-text">
-                    <span>We'd love to hear what you think!</span>
-                    <a href="#" class="animated-link ">Give Feedback</a>
-                </div>
-            </div>
+        <div class="footer-col">
+          <h4>INFOMATION</h4>
+          <ul>
+            <li><a href="#">Track order</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Help </a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
         </div>
 
-        <div class="footer-bottom">
-            <p>Copyright © Merto. All Rights Reserved</p>
-            <div class="payment-methods">
-                <i class="fa-brands fa-cc-paypal"></i>
-                <i class="fa-brands fa-cc-apple-pay"></i>
-                <i class="fa-brands fa-cc-visa"></i>
-                <i class="fa-brands fa-cc-discover"></i>
-                <i class="fa-brands fa-cc-jcb"></i>
-                <i class="fa-brands fa-cc-amazon-pay"></i>
-                <i class="fa-brands fa-cc-amex"></i>
-            </div>
+        <div class="footer-col">
+          <h4>ACCOUNT</h4>
+          <ul>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">My accounts</a></li>
+            <li><a href="#">My orders</a></li>
+            <li><a href="#">Wishlist </a></li>
+            <li><a href="#">Affiliate program</a></li>
+          </ul>
         </div>
 
+        <div class="footer-col newsletter">
+          <h4>Let's keep in touch</h4>
+          <div class="input-group">
+            <input type="email" placeholder="enter your email address" />
+            <button>→</button>
+          </div>
+          <div class="social-icons">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              ></path>
+            </svg>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+            </svg>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect
+                x="2"
+                y="3"
+                width="20"
+                height="14"
+                rx="2.13"
+                ry="2.13"
+              ></rect>
+              <path d="m9 7 8 4-8 4V7Z"></path>
+            </svg>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+            </svg>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="help-section">
+        <div class="help-item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="contact-icon"
+          >
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.28-2.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+            ></path>
+          </svg>
+          <div class="help-text">
+            <span>Didn't find what you were looking for?</span>
+            <a href="#" class="animated-link">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="help-item">
+          <i class="fa-regular fa-face-smile"></i>
+          <div class="help-text">
+            <span>How can we help you today?</span>
+            <a href="#" class="animated-link">Help Center</a>
+          </div>
+        </div>
+
+        <div class="help-item">
+          <i class="fa-regular fa-life-ring"></i>
+          <div class="help-text">
+            <span>We'd love to hear what you think!</span>
+            <a href="#" class="animated-link">Give Feedback</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © Merto. All Rights Reserved</p>
+        <div class="payment-methods">
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-apple-pay"></i>
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-discover"></i>
+          <i class="fa-brands fa-cc-jcb"></i>
+          <i class="fa-brands fa-cc-amazon-pay"></i>
+          <i class="fa-brands fa-cc-amex"></i>
+        </div>
+      </div>
     </footer>
 
     <script>
-        lucide.createIcons();
+      lucide.createIcons();
     </script>
-
-
-</body>
-
+  </body>
 </html>

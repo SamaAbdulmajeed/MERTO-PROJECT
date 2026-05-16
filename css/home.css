@@ -30,6 +30,8 @@ body {
   width: 100%;
   z-index: 1000;
   background-color: white;
+
+  padding: 0 30px;
 }
 
 .nav-logo {
@@ -140,7 +142,7 @@ body {
   font-size: 16px;
 }
 
-.search-btn {
+.nav-search-btn {
   background-color: black;
   border: none;
   border-radius: 8px;
@@ -380,9 +382,30 @@ body {
   color: #333;
 }
 
+.recently-viewed {
+  position: relative;
+}
+
+.recently-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.recently-link i {
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.recently-link:hover {
+  color: #ff4d4d;
+}
+
 /*  first section */
-/* first section */
-/* تنسيقات عامة */
 .first-section {
   padding: 20px 0;
   width: 100%;
@@ -399,10 +422,6 @@ body {
   display: flex;
   height: 450px;
 }
-
-/* ========================= */
-/* SLIDER (LEFT SIDE)
-/* ========================= */
 
 .first-section__slider {
   flex: 2;
@@ -452,10 +471,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* ========================= */
-/* BUTTON (LEFT SLIDER) - HOVER TRANSPARENT
-/* ========================= */
-
 .first-section__btn {
   background: #fff;
   color: #000;
@@ -473,7 +488,6 @@ body {
   border: 1px solid #fff;
 }
 
-/* image */
 .first-section__image {
   position: absolute;
   right: 20px;
@@ -482,10 +496,6 @@ body {
   height: 90% !important;
   object-fit: contain;
 }
-
-/* ========================= */
-/* RIGHT BANNERS
-/* ========================= */
 
 .first-section__banners {
   flex: 1;
@@ -500,7 +510,6 @@ body {
   overflow: hidden;
 }
 
-/* zoom effect */
 .first-section__card-image {
   width: 100%;
   height: 100%;
@@ -543,10 +552,7 @@ body {
   font-size: 14px;
 }
 
-/* ========================= */
-/* SHOP LINK (RIGHT CARDS) - BLACK ON HOVER
-/* ========================= */
-
+/* SHOP LINK (RIGHT CARDS) - BLACK ON HOVER*/
 .first-section__card-link {
   display: inline-block;
   margin-top: 15px;
@@ -577,9 +583,7 @@ body {
   font-weight: bold;
 }
 
-/* ========================= */
-/* OWL NAVIGATION (FIXED - CLEAN ARROWS)
-/* ========================= */
+/* OWL NAVIGATION (FIXED - CLEAN ARROWS)*/
 
 .first-section__slider .owl-nav {
   position: absolute;
@@ -634,7 +638,6 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
-  cursor: pointer;
 }
 
 .icon i {
@@ -952,7 +955,6 @@ body {
 }
 
 /* NEW ARRIVELS*/
-
 .na-container {
   max-width: 1200px;
   margin: 90px 0;
@@ -1012,7 +1014,6 @@ body {
   color: white;
 }
 
-/* الترويسة */
 .na-header {
   display: flex;
   justify-content: space-between;
@@ -1031,7 +1032,7 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
-  flex-wrap: wrap; /* مهم لو الشاشة صغرت */
+  flex-wrap: wrap;
 }
 
 .na-categories a.animated-link {
@@ -1054,7 +1055,7 @@ body {
 .na-active {
   position: relative;
   display: inline-block;
-  padding-bottom: 4px; /* عشان يبقى نفس مستوى باقي الخط */
+  padding-bottom: 4px;
 }
 
 .na-active::after {
@@ -1067,7 +1068,6 @@ body {
   background-color: #000;
 }
 
-/* layout بدل grid */
 .na-layout-flex {
   display: flex;
   flex-wrap: wrap;
@@ -1075,7 +1075,6 @@ body {
   border-left: 1px solid #eee;
 }
 
-/* الكارد */
 .na-product-card {
   position: relative;
   background: #fff;
@@ -1197,15 +1196,14 @@ body {
   color: white;
 }
 
-/* التنسيق الأساسي للكلمة اللي هتظهر (Tooltip) */
 .na-container .action-btn::after {
-  content: attr(data-tooltip); /* هنستخدم attribute عشان نحدد النص */
+  content: attr(data-tooltip);
   position: absolute;
-  bottom: 110%; /* يظهر فوق الزرار */
+  bottom: 110%;
   left: 50%;
   transform: translateX(-50%) translateY(10px);
-  background-color: #000; /* خلفية سوداء */
-  color: #fff; /* نص أبيض */
+  background-color: #000;
+  color: #fff;
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 4px;
@@ -1217,7 +1215,6 @@ body {
   pointer-events: none;
 }
 
-/* السهم الصغير اللي تحت الكلمة */
 .na-container .action-btn::before {
   content: "";
   position: absolute;
@@ -1232,7 +1229,6 @@ body {
   transition: all 0.3s ease;
 }
 
-/* تأثير الـ Hover: إظهار الكلمة والسهم وتغيير لون الأيقونة */
 .na-container .action-btn:hover::after,
 .na-container .action-btn:hover::before {
   opacity: 1;
@@ -1245,7 +1241,6 @@ body {
   text-decoration: none;
 }
 
-/* نخفي الخط */
 .na-categories .animated-link::after {
   content: "";
   position: absolute;
@@ -1261,7 +1256,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* يظهر وقت الهوفر */
 .na-categories .animated-link:hover::after {
   transform: scaleX(1);
 }
@@ -1271,8 +1265,8 @@ body {
 }
 
 .na-container .action-btn:hover {
-  background-color: #000 !important; /* خلفية الزرار تبقى أسود */
-  color: #fff !important; /* الأيقونة تبقى أبيض */
+  background-color: #000 !important;
+  color: #fff !important;
 }
 
 /* hoodie-section*/
@@ -1883,6 +1877,7 @@ footer {
   color: #ffffff;
   padding: 40px 0 15px 0;
   font-family: sans-serif;
+  margin-top: 50px;
 }
 
 .footer-container {
@@ -2008,10 +2003,6 @@ footer .social-icons svg {
   transition: 0.3s;
 }
 
-footer .social-icons svg:hover {
-  color: rgb(225, 63, 63);
-}
-
 .help-section {
   display: flex;
   justify-content: space-around;
@@ -2071,57 +2062,20 @@ footer .social-icons svg:hover {
   border-radius: 3px;
 }
 
-.animated-link {
-  text-decoration: none;
-  color: inherit;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 2px;
-  transition: color 0.3s;
+footer .animated-link {
+  color: #fff;
 }
 
-.animated-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: currentColor;
-  transform: scaleX(1) translateZ(0);
-  will-change: transform;
-  backface-visibility: hidden;
-  transform-origin: bottom left;
+footer .animated-link:hover {
+  color: #fff;
 }
 
-.animated-link:hover {
-  color: white;
+footer .animated-link::after {
+  background-color: #fff;
 }
 
-.animated-link:hover::after {
-  animation: sweep 0.6s forwards;
-}
-
-@keyframes sweep {
-  0% {
-    transform: scaleX(1);
-    transform-origin: bottom right;
-  }
-
-  50% {
-    transform: scaleX(0);
-    transform-origin: bottom right;
-  }
-
-  51% {
-    transform: scaleX(0);
-    transform-origin: bottom left;
-  }
-
-  100% {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+footer .animated-link:hover::after {
+  background-color: white;
 }
 
 .payment-methods {

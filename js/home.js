@@ -7,14 +7,13 @@ $(document).ready(function () {
     smartSpeed: 1000,
     nav: true,
     dots: true,
-    // الأسهم هتكون شفافة ومن غير بوكس
     navText: ["<span>&#10094;</span>", "<span>&#10095;</span>"],
   });
 });
 
 // updateCountdown watch
 let targetTime = new Date();
-targetTime.setHours(targetTime.getHours() + 5); // 5 ساعات من دلوقتي
+targetTime.setHours(targetTime.getHours() + 5);
 
 function updateCountdown() {
   let now = new Date().getTime();
