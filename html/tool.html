@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME PAGE</title>
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <link rel="stylesheet" href="../css/tool.css" />
+  </head>
+ <!-- Navbar-->
+    <div class="nav-bar">
+      <nav class="main-nav">
+        <h1 class="nav-logo">M<span class="e-red">e</span>rto</h1>
+        <div class="nav-contact-item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="contact-icon"
+          >
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.28-2.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+            ></path>
+          </svg>
+          <div class="contact-text">
+            <span>Contact us 24/7</span>
+            <p>(+92) 3942 7879</p>
+          </div>
+        </div>
+
+        <div class="search">
+          <div class="dropdown">
+            <button class="drop-btn">
+              All Categories <span><i class="arrow"></i></span>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Electronics</a>
+              <a href="#">Fashion</a>
+              <a href="#">Home</a>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="search-input">
+            <input type="text" placeholder="Search for products..." />
+            <button class="search-btn">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="nav-settings">
+          <div class="setting-item">
+            <img
+              src="https://flagcdn.com/w20/us.png"
+              alt="English"
+              class="flag-icon"
+            />
+            <span>English</span>
+            <i class="fas fa-chevron-down arrow-icon"></i>
+            <ul class="dropdown-list">
+              <li>Arabic</li>
+              <li>French</li>
+            </ul>
+          </div>
+
+          <div class="setting-item">
+            <span>USD</span>
+            <i class="fas fa-chevron-down arrow-icon"></i>
+            <ul class="dropdown-list">
+              <li>EUR</li>
+              <li>EGP</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="user-actions-container">
+          <div class="action-item account">
+            <i class="fa-regular fa-user user-icon-main"></i>
+            <span class="label">Account</span>
+          </div>
+
+          <div class="action-item wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <span class="badge">0</span>
+          </div>
+
+          <div class="action-item cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="badge">0</span>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="bottom-nav">
+        <div class="container">
+          <div class="all-categories">
+            <button class="categories-btn">
+              <i class="fa-solid fa-bars"></i>
+              SHOP BY CATEGORIES
+            </button>
+          </div>
+
+          <ul class="nav-links">
+            <li>
+              <a href="#">Homepages <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                >Categories <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li>
+              <a href="#" class="discount-link"
+                ><i class="fa-solid fa-percent"></i> Best Discount</a
+              >
+            </li>
+          </ul>
+
+          <div class="recently-viewed">
+            <a href="#"
+              >Recently viewed <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  <body>
+    <div class="product-container">
+      <nav class="breadcrumb">
+        <a href="#">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a href="#">Shop</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a href="#">Autopart</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a href="#">Car Care</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a href="#">TOOLS 34 Low...</a>
+      </nav>
+      <div class="product-main">
+        <div class="image-gallery">
+          <div class="thumbnails">
+            <img
+              src="../images/imgi_58_automotive-11.jpg"
+              class="active"
+              alt="thumb"
+            />
+            <img src="../images/tool4.jpeg" alt="" />
+            <img src="../images/tool5.jpg" alt="" />
+            <img src="../images/tool6.jpg" alt="" />
+          </div>
+          <div class="main-image-box">
+            <span class="discount-tag">-8%</span>
+            <button class="zoom-btn"><i class="fa-solid fa-expand"></i></button>
+            <img src="../images/imgi_58_automotive-11.jpg" alt="Main Product" />
+          </div>
+        </div>
+
+        <div class="product-info">
+          <p class="brand">Michelin</p>
+          <h1 class="title">TOOLS 34 Low Profile Hydraulic Trolley</h1>
+
+          <div class="rating-box">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="rating-count">5.00 (2 Reviews)</span>
+            <span class="write-rev">Write a review</span>
+          </div>
+
+          <ul class="features">
+            <li><i class="fa-solid fa-check"></i> 17637 lbs/8T</li>
+            <li><i class="fa-solid fa-check"></i> Wear-Resistant</li>
+            <li><i class="fa-solid fa-check"></i> Secure Movement</li>
+          </ul>
+
+          <div class="price-row">
+            <div class="price-block">
+              <span class="price-now">$767</span>
+              <span class="price-old">$837</span>
+              <span class="price-save">(Save $70)</span>
+            </div>
+
+            <div class="timer">
+              <div class="time-unit" id="days">00</div>
+              <span class="timer-sep">:</span>
+
+              <div class="time-unit" id="hours">00</div>
+              <span class="timer-sep">:</span>
+
+              <div class="time-unit" id="minutes">00</div>
+              <span class="timer-sep">:</span>
+
+              <div class="time-unit" id="seconds">00</div>
+            </div>
+          </div>
+
+          <div class="stock">In stock</div>
+
+          <div class="action-row">
+            <div class="qty-selector">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <button class="cart-btn">
+              <span class="plus-icon">+</span>
+              <span>ADD TO</span>
+              <span>CART</span>
+            </button>
+            <button class="buy-btn">BUY NOW</button>
+          </div>
+
+          <div class="util-links">
+            <span><i class="fa-regular fa-heart"></i> Add to wishlist</span>
+            <span><i class="fa-solid fa-right-left"></i> Add to compare</span>
+          </div>
+
+          <div class="meta-info">
+            <div class="meta-line">
+              <span class="meta-label">SKU:</span>
+              <span class="meta-val">GJD0KIZFOU</span>
+            </div>
+            <div class="meta-line">
+              <span class="meta-label">Categories:</span>
+              <span class="meta-val">Autopart, Car Care, Equipment</span>
+            </div>
+
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs-container">
+      <div class="tabs-header">
+        <button class="tab-link active" onclick="openTab(event, 'Description')">
+          Description
+        </button>
+        <button class="tab-link" onclick="openTab(event, 'Specifications')">
+          Specifications
+        </button>
+        <button class="tab-link" onclick="openTab(event, 'Reviews')">
+          Reviews (2)
+        </button>
+      </div>
+      <hr class="header-divider" />
+
+      <div id="Description" class="tab-content active">
+        <div class="desc-wrapper">
+          <div class="desc-text">
+            <p>
+              Compellingly grow performance based mindshare through parallel
+              potentialities. Rapidiously underwhelm top-line catalysts for
+              change before best-of-breed materials. Competently brand timely
+              catalysts for change through sustainable systems. Completely
+              expedite ubiquitous bandwidth after integrated action items.
+              Progressively transform leading-edge supply chains whereas
+              flexible niche markets.
+            </p>
+          </div>
+          <div class="desc-table-container">
+            <table class="info-table">
+              <tr>
+                <td><strong>Shipping</strong></td>
+                <td>
+                  We currently offer free shipping worldwide on all orders over
+                  $100.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Sizing</strong></td>
+                <td>Fits true to size. Do you need size advice?</td>
+              </tr>
+              <tr>
+                <td><strong>Return & exchange</strong></td>
+                <td>
+                  If you are not satisfied with your purchase you can return it
+                  to us within 14 days for an exchange or refund.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Assistance</strong></td>
+                <td>
+                  Contact us on (+44) 555 88 65, or email us at
+                  support@themesky.com
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="Specifications" class="tab-content">
+        <table class="info-table">
+          <tr>
+            <td><strong>Drive</strong></td>
+            <td>Hydraulic</td>
+          </tr>
+          <tr>
+            <td><strong>Vehicle Type</strong></td>
+            <td>Light Vehicle</td>
+          </tr>
+          <tr>
+            <td><strong>Material</strong></td>
+            <td>Mild Steel</td>
+          </tr>
+          <tr>
+            <td><strong>Type</strong></td>
+            <td>Floor Jack</td>
+          </tr>
+        </table>
+      </div>
+
+     <div id="Reviews" class="tab-content">
+  <div class="reviews-section">
+    <div class="reviews-summary">
+  <div class="total-rating">
+    <h1 class="rating-number">5.00</h1>
+    <div class="stars-display">★★★★★</div>
+    <p class="reviews-count-text">Based on 2 reviews</p>
+  </div>
+
+  <div class="rating-bars">
+    <div class="bar-item">
+      <span class="star-label">5 ★</span>
+      <div class="progress-container">
+        <div class="progress-fill" style="width: 100%"></div>
+      </div>
+      <span class="count-label">2</span>
+    </div>
+
+    <div class="bar-item">
+      <span class="star-label">4 ★</span>
+      <div class="progress-container">
+        <div class="progress-fill" style="width: 0%"></div>
+      </div>
+      <span class="count-label">0</span>
+    </div>
+
+    <div class="bar-item">
+      <span class="star-label">3 ★</span>
+      <div class="progress-container">
+        <div class="progress-fill" style="width: 0%"></div>
+      </div>
+      <span class="count-label">0</span>
+    </div>
+
+    <div class="bar-item">
+      <span class="star-label">2 ★</span>
+      <div class="progress-container">
+        <div class="progress-fill" style="width: 0%"></div>
+      </div>
+      <span class="count-label">0</span>
+    </div>
+
+    <div class="bar-item">
+      <span class="star-label">1 ★</span>
+      <div class="progress-container">
+        <div class="progress-fill" style="width: 0%"></div>
+      </div>
+      <span class="count-label">0</span>
+    </div>
+  </div>
+</div>
+
+    <hr class="section-divider" />
+
+    <div class="individual-reviews">
+      <div class="review-card">
+        <img src="../images/firstman.png" alt="Robert" class="user-avatar">
+        <div class="review-details">
+          <div class="review-header">
+            <div class="stars">★★★★★</div>
+            <strong>Robert Burns</strong>
+            <span class="review-date">July 17, 2024</span>
+          </div>
+          <div class="review-body">
+            <strong>Ease of use</strong>
+            <p>Great little set. Works well with Toyota. Very sturdy and compact size.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="review-card">
+        <img src="../images/second man.jpg" alt="John" class="user-avatar">
+        <div class="review-details">
+          <div class="review-header">
+            <div class="stars">★★★★★</div>
+            <strong>John</strong>
+            <span class="review-date">July 17, 2024</span>
+          </div>
+          <div class="review-body">
+            <strong>Great price</strong>
+            <p>I was searching for a car jack and this one came up and it's been great. I like that it comes with two stands for the price of a car jack. I do wish it would have came with a carrying case like some of the others advertised.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="add-review">
+  <h3>Add a review</h3>
+  <p>Your email address will not be published. Required fields are marked <span class="red">*</span></p>
+  
+  <form>
+    <div class="form-group">
+      <label>Your rating <span class="red">*</span></label>
+      <div class="stars-row">
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+    </div>
+
+    <div class="form-group file-input-row">
+      <label>Choose pictures (maxsize: 50kB, max files: 2)</label>
+      <input type="file" id="file-upload" multiple>
+    </div>
+
+    <div class="form-row">
+      <div class="input-group">
+        <label>Name <span class="red">*</span></label>
+        <input type="text" required>
+      </div>
+      <div class="input-group">
+        <label>Email <span class="red">*</span></label>
+        <input type="email" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Your review <span class="red">*</span></label>
+      <textarea rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">SUBMIT</button>
+  </form>
+</div>
+  </div>
+</div>
+
+ <!-- best-silling -->
+    <section class="best-selling">
+      <div class="section-header">
+     <h2>Related products</h2>
+  </div>
+
+        <div class="owl-carousel owl-theme product-slider">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="../images/item3.jpg" alt="Product" />
+              <div class="side-actions">
+                <button class="action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+
+                <button class="action-btn compare-btn">
+                  <i class="fas fa-arrows-rotate"></i>
+                </button>
+
+                <button class="action-btn search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+
+                <button class="action-btn cart-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="title">Allure Luminous Intense Lipstick</p>
+              <p class="price">$20 <span class="old-price">$24</span></p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              <img src="../images/item2.jpg" alt="Product" />
+              <div class="side-actions">
+                <button class="action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+
+                <button class="action-btn compare-btn">
+                  <i class="fas fa-arrows-rotate"></i>
+                </button>
+
+                <button class="action-btn search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+
+                <button class="action-btn cart-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="title">
+                Eye Shadow Palette, Natural ,Nudes ,0.19 Ounce
+              </p>
+              <p class="price">$28</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              <img src="../images/tool6.jpg" alt="Product" />
+              <div class="side-actions">
+                <button class="action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+
+                <button class="action-btn compare-btn">
+                  <i class="fas fa-arrows-rotate"></i>
+                </button>
+
+                <button class="action-btn search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+
+                <button class="action-btn cart-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="title">Allure Luminous Intense Lipstick</p>
+              <p class="price">$15</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              <span class="badge-sale">-17%</span>
+              <img src="../images/imgi_44_automotive-13.jpg" alt="Product" />
+              <div class="side-actions">
+                <button class="action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+
+                <button class="action-btn compare-btn">
+                  <i class="fas fa-arrows-rotate"></i>
+                </button>
+
+                <button class="action-btn search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+
+                <button class="action-btn cart-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="title">Allure Luminous Intense Lipstick</p>
+              <p class="price">$148</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              <img src="../images/item1.jpg" />
+              <div class="side-actions">
+                <button class="action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+
+                <button class="action-btn compare-btn">
+                  <i class="fas fa-arrows-rotate"></i>
+                </button>
+
+                <button class="action-btn search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+
+                <button class="action-btn cart-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="title">Allure Luminous Intense Lipstick</p>
+              <p class="price">$1,390</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              <span class="badge-sale">-17%</span>
+
+              
+              <img src="../images/item4.jpg" alt="Product" />
+              <div class="side-actions">
+                <button class="action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+
+                <button class="action-btn compare-btn">
+                  <i class="fas fa-arrows-rotate"></i>
+                </button>
+
+                <button class="action-btn search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+
+                <button class="action-btn cart-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="title">Allure Luminous Intense Lipstick</p>
+              <p class="price">$499 <span class="old-price">$599</span></p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              <span class="badge-sale">-8%</span>
+              <img src="../images/item3.jpg" alt="Product" />
+              <div class="side-actions">
+                <button class="action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+
+                <button class="action-btn compare-btn">
+                  <i class="fas fa-arrows-rotate"></i>
+                </button>
+
+                <button class="action-btn search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+
+                <button class="action-btn cart-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="title">Allure Luminous Intense Lipstick</p>
+              <p class="price">$767<span class="old-price">$873</span></p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              <span class="badge-sale">-35%</span>
+              <img src="../images/item2.jpg" alt="Product" />
+              <div class="side-actions">
+                <button class="action-btn wishlist-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+
+                <button class="action-btn compare-btn">
+                  <i class="fas fa-arrows-rotate"></i>
+                </button>
+
+                <button class="action-btn search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+
+                <button class="action-btn cart-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="title">Allure Luminous Intense Lipstick</p>
+              <p class="price">$999<span class="old-price">$1,536</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../js/tool.js"></script>
+  </body>
+</html>
