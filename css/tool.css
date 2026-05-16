@@ -713,6 +713,143 @@ body {
   color: #e31e24;
 }
 
+.cashback-banner {
+  background-color: #d1ebd8;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 160px;
+  overflow: visible;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-title {
+  color: #000000;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 15px 0;
+}
+
+.banner-subtitle {
+  color: #333333;
+  font-size: 13px;
+  margin: 0;
+}
+
+.banner-subtitle a {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.banner-action {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-more-btn {
+  background-color: #237042;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #1a5431;
+}
+
+.banner-images {
+  flex: 2;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.cards-img {
+  height: 140px;
+  object-fit: contain;
+  transform: translateY(-5px);
+}
+.product-tabs-nav {
+  max-width: 1200px;
+  margin: 50px auto 20px auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 0;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  font-weight: 700;
+  color: #999999;
+  padding: 0 0 15px 0;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.tab-btn:hover {
+  color: #555555;
+}
+
+.tab-btn.active {
+  color: #000000;
+}
+
+.tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+}
+
+.tab-separator {
+  color: #dddddd;
+  font-size: 20px;
+  margin-bottom: 15px;
+  cursor: default;
+  user-select: none;
+}
+
+.view-more-btn {
+  background-color: #237042;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .cashback-section {
   background-color: #d4edda;
   display: flex;
@@ -763,9 +900,10 @@ content h1 {
   margin: 0 20px;
 }
 
-.view-more:hover {
+.view-more-btn:hover {
   background-color: transparent;
-  color: #2d7a44;
+  color: #237042;
+  border: 2px solid #237042;
 }
 
 .visa-image {
@@ -804,7 +942,6 @@ content h1 {
   font-size: 22px;
   font-weight: bold;
   color: #999;
-  cursor: pointer;
   padding-bottom: 15px;
   position: relative;
   white-space: nowrap;
@@ -1043,11 +1180,25 @@ content h1 {
   margin: 20px 0;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
+/* تنسيق حقول الإدخال والنصوص داخل صندوق التقييم فقط */
+.add-review input[type="text"],
+.add-review input[type="email"],
+.add-review textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ffffff; /* إطار رمادي خفيف وواضح */
+  border-radius: 4px; /* انحناء بسيط للحواف */
+  background-color: #ffffff; /* خلفية بيضاء ناصعة تماماً */
+  color: #333333; /* لون خط داكن لتسهيل القراءة */
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* لمنع الحقول من التحول للون الأسود عند الضغط عليها */
+.add-review input:focus,
+.add-review textarea:focus {
+  border-color: #000000; /* يتحول الإطار للأسود عند الكتابة */
 }
 
 .submit-btn {
@@ -1098,17 +1249,6 @@ label {
   font-size: 14px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  background-color: #fff;
-  box-sizing: border-box;
-}
-
 .submit-btn {
   background-color: #000;
   color: #fff;
@@ -1126,7 +1266,6 @@ textarea {
   background-color: #ff0000 !important;
 }
 
-/* best-silling */
 .best-selling,
 .flash-deals {
   padding: 20px;
